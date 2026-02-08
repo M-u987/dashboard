@@ -200,6 +200,7 @@ body {
         border: none;
 }
 
+
 .form-actions {
   display: flex;
   gap: 10px;
@@ -268,3 +269,27 @@ table .danger {
   0% { background-position: 100% 0; }
   100% { background-position: -100% 0; }
 }
+
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.main {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.main.open {
+  margin-left: 220px;
+}
+
+.main.closed {
+  margin-left: 60px;
+}
+
+.page-content {
+  padding: 20px;
+}
+

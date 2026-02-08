@@ -5,11 +5,11 @@ import { FaBars } from "react-icons/fa";
 export default function Sidebar() {
 
   return (
-    <aside className="sidebar">
-      
+    <aside className={`sidebar ${isOpen ? "show" : "Hide"}`}>
+
       <div className="side">
-            <h1 >Admin</h1>
-            <FaBars/>
+        <h1 >Admin</h1>
+          <FaBars/>
       </div>
       <nav className="menu">
         <NavLink to="/" end>Dashboard</NavLink>

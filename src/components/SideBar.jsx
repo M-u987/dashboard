@@ -1,11 +1,12 @@
-import { useState } from "react";
+import "./Sidebar.css"
 import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
-export default function Sidebar() {
+
+export default function Sidebar({isOpen}) {
 
   return (
-    <aside className={`sidebar ${isOpen ? "show" : "Hide"}`}>
+    <aside className={`sidebar ${isOpen ? "show" : "Hide"} `}>
 
       <div className="side">
         <h1 >Admin</h1>

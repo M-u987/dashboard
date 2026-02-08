@@ -6,13 +6,13 @@ import "./admin.css";
 
 export default function AdminLayout() {
 
-  const [Sidebar,setSidebar]=useState(false);
+  const [Sidebars,setSidebar]=useState(false);
   
   return (
     <div className="admin-wrapper">
-      <Sidebar isOpen={Sidebar} />
-      <div className={`admin-right ${Sidebar ? "open" : "closed"}`}>
-        <Header ToggleSidebar={()=>setSidebar(!Sidebar)} />
+      <Sidebar isOpen={Sidebars} />
+      <div className={`admin-right ${Sidebars ? "open" : "closed"}`}>
+        <Header ToggleSidebar={()=>setSidebar(!Sidebars)} />
         <main className="admin-body">
           <Outlet />
         </main>

@@ -16,6 +16,14 @@ body {
 }
 
 /* Sidebar */
+.side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px
+
+}
+
 .sidebar {
   width: 240px;
   background: #0f172a;
@@ -89,11 +97,13 @@ body {
   background: #ffffff;
   padding: 20px;
   border-radius: 14px;
+  font-weight: bold;
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transform: translateY();
 }
 
 .stat-card p {
-  color: #64748b;
+  color: #2563eb;
   margin-bottom: 8px;
 }
 
@@ -107,4 +117,154 @@ body {
   padding: 20px;
   border-radius: 14px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+
+
+/* Table Css */
+
+.users-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.users-header button {
+  padding: 8px 14px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.user-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.user-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+}
+
+/* Add User Buttons */
+
+.AddSubmit{
+    border-radius: 12px;
+    font-weight: bold;
+    background: #500fdc;
+    color: #ffffff;
+    padding: 13px;
+        border: none;
+}
+
+.EditSubmit{
+    border-radius: 12px;
+    font-weight: bold;
+    background: #dc0f0f;
+    color: #ffffff;
+    margin-left: 11px;
+    padding: 13px;
+        border: none;
+
+}
+
+
+/* Bottom Next button And Previous Button */
+
+.NxrBtn{
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #3ccd3c;
+    padding: 8px;
+    margin-right: 422px;
+        border: none;
+}
+
+.PreBtn{
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #585c9b;;
+    padding: 8px;
+    margin-left: 220px;
+        border: none;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.table-wrapper table {
+  width: 100%;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th, table td {
+    font-weight: 600;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+    color: #fff;
+  background: #2563eb;
+}
+
+table button {
+      border-radius: 14px;
+  font-weight: bold;
+  margin-right: 8px;
+  padding: 6px;
+  width: 29%;
+  background: rgb(80, 15, 220);
+  color: #fff;
+      border: none;
+}
+
+table .danger {
+  border-radius: 14px;
+  font-weight: bold;
+  padding: 6px;
+  width: 29%;
+  background: #ef4444;
+  color: white;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Skeleton */
+.skeleton-row {
+  height: 40px;
+  background: linear-gradient(
+    90deg,
+    #e5e7eb 25%,
+    #f3f4f6 37%,
+    #e5e7eb 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+@keyframes shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
 }

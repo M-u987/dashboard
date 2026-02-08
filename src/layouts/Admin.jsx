@@ -4,8 +4,9 @@ import Header from "../components/Header";
 import "./admin.css";
 
 export default function AdminLayout() {
-
-
+  
+ 
+  
   return (
     <div className="admin-wrapper">
       <Sidebar />

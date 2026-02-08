@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <header className="topbar">
-      <h2>Dashboard</h2>
+      <h2> Admin Dashboard</h2>
       <div className="profile">
         <span >Admin</span>
         <img
